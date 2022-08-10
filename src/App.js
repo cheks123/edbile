@@ -1,7 +1,10 @@
+import "./App.css";
+import Header from "./Header";
+
 function Home() {
   return (
     <div className="App">
-      <h1>EdMobile</h1>
+      <Header/>
       <p>
         EdMobile is geared towards providing study materials
         for students in the senior secondary school and for teachers like.
