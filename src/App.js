@@ -27,16 +27,17 @@ function App() {
     case "/subjects":
       Component = Subjects;
       break;
+    default:
+      Component = Home;
+      break;
   }
   return (
-    <>
+    <div>
       <Nav/>
-      <div className="container">
-        <Component/>
-        <Footer/>
-      </div>
-
-    </>
+      <Component/>
+      <Footer/>
+  
+    </div>
   );
 }
 

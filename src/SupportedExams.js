@@ -3,7 +3,7 @@ function SupportedExams() {
     return (
        
 
-            <div className="row">
+            <div className="row supported-exams">
                 <h2>Supported Examinations</h2>
                 <p>We support the following examinations:</p>
                 <div className="col3">

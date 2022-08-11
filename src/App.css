@@ -1,3 +1,4 @@
+
 nav{
     background: #0082e6;
     color: white;
@@ -6,6 +7,7 @@ nav{
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;
+    margin-bottom:0;
 }
 
 .container{
@@ -50,10 +52,31 @@ nav ul li{
     margin: 0 5px;
 }
 
+.banner{
+    margin-top:0;
+    width: 100%;
+    height:50vh;
+    background-color: #1b9bff;
+    color:white;
+}
+
 .row{
     width:100%;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    padding: 0 2rem;
+}
+
+.available-subjects h2, .available-subjects p{
+    width:100%;
+    text-align:center;
+}
+
+
+.supported-exams, h2{
+    display:block;
+    width:100%;
+    text-align:center;
 }
 
 .col3{
@@ -61,6 +84,41 @@ nav ul li{
     float:left;
 }
 
+h2{
+    padding:2rem;
+}
+
+p{
+    padding: 1rem;
+}
+
+.subject{
+    margin: 1rem 0rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+.subject:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.continue-learning{
+    display:block;
+    width: 70%;
+    padding: .5rem;
+    margin:0 auto;
+    background-color:#0082e6;
+    border-radius: 2rem;
+    color:white;
+}
+
+.continue-learning:hover{
+    background-color: #1b9bff;
+}
+
+
 footer{
     background-color: #1b9bff;
+    
 }

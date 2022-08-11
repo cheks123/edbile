@@ -1,16 +1,13 @@
-import Banner from "../Banner"
 import AvailableSubjects from "./AvailableSubjects";
 import SupportedExams from "../SupportedExams";
 
 function Home() {
     return (
         <>
-            <Banner />
-
-            <div className="row">
-                <AvailableSubjects />
+            <div className="banner">
+            <h1 className="bannerh1">Welcome to EdMobile</h1>
             </div>
-
+            <AvailableSubjects />
             <SupportedExams/>
 
         </>
