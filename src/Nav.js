@@ -6,7 +6,7 @@ function Nav() {
           <ul>
             <CustomLink href="/home">Home</CustomLink>
             <CustomLink href="/about">About</CustomLink>
-            <CustomLink href="/contacts">Contacts</CustomLink>
+            <CustomLink href="/contact">Contact</CustomLink>
             <CustomLink href="/subjects">Subjects</CustomLink>
           </ul>
         

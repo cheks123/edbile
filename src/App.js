@@ -1,10 +1,10 @@
 import "./App.css";
 import Nav from "./Nav";
-import Banner from "./Banner";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Subjects from "./pages/Subjects";
 import Home from "./pages/Home";
+import Footer from "./pages/Footer";
 
 function App() {
   let Component;
@@ -33,6 +33,7 @@ function App() {
       <Nav/>
       <div className="container">
         <Component/>
+        <Footer/>
       </div>
 
     </>

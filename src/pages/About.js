@@ -1,8 +1,13 @@
 function About() {
-    return (
+  return (
+    <div className="row">
       <h1>About</h1>
-    );
-  }
-  
-  export default About;
-  
+      <p>
+        EdMobile is geared towards providing study materialsfor students in the senior secondary school and for teachers like.
+      </p>
+    </div>
+
+  );
+}
+
+export default About;
