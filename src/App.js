@@ -1,47 +1,42 @@
 import "./App.css";
-import Header from "./Header";
+import Nav from "./Nav";
+import Banner from "./Banner";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Subjects from "./pages/Subjects";
+import Home from "./pages/Home";
 
-function Home() {
+function App() {
+  let Component;
+  switch(window.location.pathname){
+    case "/":
+      Component = Home;
+      break;
+    case "/edbile":
+      Component = Home;
+      break;
+    case "/home":
+      Component = Home;
+      break;
+    case "/about":
+      Component = About;
+      break;
+    case "/contact":
+      Component = Contact;
+      break;
+    case "/subjects":
+      Component = Subjects;
+      break;
+  }
   return (
-    <div className="App">
-      <Header/>
-      <p>
-        EdMobile is geared towards providing study materials
-        for students in the senior secondary school and for teachers like.
-      </p>
-      <h2>Available Subjects</h2>
-      <p>We have the following subjects:</p>
-      <ul>
-        <li>Mathematics</li>
-        <li>English Language</li>
-        <li>Physics</li>
-        <li>Chemistry</li>
-        <li>Biology</li>
-        <li>Economics</li>
-        <li>Commerce</li>
-        <li>Government</li>
-        <li>Civic Education</li>
-      </ul>
-      <h2>Supported Examinations</h2>
-      <p>We support the following examinations:</p>
-      <ul>
-        <li>WAEC</li>
-        <li>NECO</li>
-        <li>JAMB</li>
-      </ul>
-      <h2>Other Resources</h2>
-      <p>We also have the following resources:</p>
-      <ul>
-        <li>Past questions and answers for JAMB and WAEC</li>
-        <li>Quiz section</li>
-        <li>Comprehensive lesson notes for teachers</li>
-        <li>National and international curriculum</li>
-        <li>Syllabuses for local examinations</li>
-        <li>Syllabuses for international examinations</li>
-      </ul>
+    <>
+      <Nav/>
+      <div className="container">
+        <Component/>
+      </div>
 
-    </div>
+    </>
   );
 }
 
-export default Home;
+export default App;
