@@ -1,5 +1,6 @@
 import AvailableSubjects from "./AvailableSubjects";
-import SupportedExams from "../SupportedExams";
+import SupportedExams from "./SupportedExams";
+import Testimonials from "./Testimonials";
 
 function Home() {
     return (
@@ -7,9 +8,11 @@ function Home() {
             <div className="banner">
             <h1 className="bannerh1">Welcome to EdMobile</h1>
             </div>
-            <AvailableSubjects />
+            
+            <AvailableSubjects/>
             <SupportedExams/>
-
+            <Testimonials/>
+             
         </>
     );
 }
