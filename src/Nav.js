@@ -1,27 +1,46 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 function Nav() {
+
+  const [showNav, setShowNav] = useState(false);
   
+  const menuToggle = () => setShowNav(prev => !showNav);
     return (
+      <>
       <nav className="navbar">
-        <a href="/" className="logo">EdMobile</a>
-          <ul>
-            <CustomLink href="/home">Home</CustomLink>
-            <CustomLink href="/about">About</CustomLink>
-            <CustomLink href="/contact">Contact</CustomLink>
-            <CustomLink href="/subjects">Subjects</CustomLink>
+        <Link to="/" className="logo">StudiRepo</Link>
+          <ul className="nav-list">
+            <CustomLink to="/">Home</CustomLink>
+            <CustomLink to="/about">About</CustomLink>
+            <CustomLink to="/contact">Contact</CustomLink>
+            <CustomLink to="">Subjects</CustomLink>
           </ul>
-        
+          <div className="menu-icon2" onClick={menuToggle}>
+            <div className="hamburger"></div>
+            <div className="hamburger"></div>
+            <div className="hamburger"></div>
+            </div>
       </nav>
+      <nav className="mobile-navbar">
+        <ul className="mobile-nav-list" style={{maxHeight:showNav?"100%":"0%"}}>
+          <CustomLink to="/">Home</CustomLink>
+          <CustomLink to="/about">About</CustomLink>
+          <CustomLink to="/contact">Contact</CustomLink>
+          <CustomLink to="">Subjects</CustomLink>
+        </ul>
+    </nav>
+    </>
     );
   }
 
   
-  function CustomLink({href, children, ...props}){
+  function CustomLink({to, children, ...props}){
     const path = window.location.pathname
     
 
     return(
-      <li className={path === href? "active":""}>
-        <a href={href} {...props}>{children}</a>
+      <li className={path === to? "active":""}>
+        <Link to={to} {...props}>{children}</Link>
       </li>
 
     )

@@ -1,12 +1,15 @@
-nav{
+
+
+.navbar, .nav-list{
+    display:flex;
+    align-items: center;
+}
+
+.navbar{
     background: #000;
     color: white;
-    display:flex;
+    margin: 0;
     justify-content: space-between;
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 1rem;
-    margin-bottom:0;
 }
 
 .container{
@@ -18,19 +21,20 @@ a.logo{
     font-size: 2.5rem;
     text-decoration: none;
     font-weight: bold;
+    margin-left: 0.5rem;
 
 }
 
-nav ul{
+.navbar ul{
     padding:0;
     margin:0;
     list-style: none;
     display:flex;
-    gap: 1rem;
+    gap:3rem;
     
 }
 
-nav a{
+.navbar a{
     color: white;
     text-decoration: none;
     display: flex;
@@ -40,22 +44,35 @@ nav a{
 
 
 
-nav li.active, nav li:hover{
+.navbar li.active, nav li:hover{
     background-color: #333;
 }
 
 
-nav ul li{
+.navbar ul li{
     display:inline-block;
     line-height: 80px;
     margin: 0 5px;
+}
+
+ul.mobile-nav-list{
+    display:none;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-right: 20px;
+    display: none;
+}
+
+.menu-icon2{
+    display:none;
 }
 
 .banner{
     margin-top:0;
     width: 100%;
     height:50vh;
-    background-color: #1b9bff;
     color:#333;
     position:relative;
     background-image: url("./banner.jpg");
@@ -84,7 +101,9 @@ nav ul li{
     margin-top: 4rem;
     margin-bottom: 4rem;
     padding: 0 2rem;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .available-subjects h2, .available-subjects p{
@@ -100,9 +119,9 @@ nav ul li{
 }
 
 .col3{
-    width: 33%;
+    flex-basis: 33%;
+    min-width: 300px;
     margin:0;
-    display:inline-block;
     overflow:hidden;
     
 }
@@ -147,6 +166,13 @@ p{
     text-align: center;
 }
 
+
+.exam-logo{
+    display:block;
+    margin: 0 auto;
+    width: 5rem;
+}
+
 footer{
     background-color: #000000;
     color:white;
@@ -164,28 +190,78 @@ footer .col3{
     text-align:center
 }
 
+
 /* -------------------------- media query for menu ------------------------------ */
 
+@media only screen and (max-width:800px){
+    ul.nav-list{
+        display:none;
+    }
+    .menu-icon{
+        display:block;
+        cursor: pointer;
+    }
 
+    .menu-icon2{
+        display:block;
+        cursor: pointer;
+        margin-right: 1.5rem;
+    }
+
+    .menu-icon2 .hamburger{
+        width:2.5rem;
+        margin:0.4rem 0rem;
+        height:0.2rem;
+        background:white;
+    
+    }
+    
+
+    ul.mobile-nav-list{
+        display:block;
+        background-color: #000;
+        color:#fff;
+        font-size:1.6rem;
+        position:absolute;
+        z-index: 10;
+        width:100%;
+        transition: max-height 0.5s;
+    }
+
+    .max-height0{
+        max-width: 0;
+    }
+    
+    .max-height100{
+        max-height: 100%;
+    }
+
+    ul.mobile-nav-list li{
+        display: block;
+        width:100%;
+        color:#fff;
+        margin: 0.2rem 0.1rem;
+        padding-left: 0.3rem;
+    }
+
+    ul.mobile-nav-list li a{
+        color:white;
+    }
+}
 
 /* media query for less than 600 screen size */
 
-@media only screen and (max-width:1200px){
-
-    .col3{
-        width: 50%;
-    }
-
-}
-
-
 @media only screen and (max-width:600px){
+    .row{
+        text-align: justify;
+    }
 
-    .col3{
-        width: 100%;
+    .col-3{
+        flex-basis: 100%;
     }
 
 }
+
 
 
 
