@@ -1,4 +1,5 @@
 import { subjectData } from "./data";
+import { Link } from "react-router-dom";
 
 function AvailableSubjects() {
     return (
@@ -11,7 +12,7 @@ function AvailableSubjects() {
                         <div key = {key} className="col3 subject">
                             <h3>{ data.subject }</h3>
                             <p>{ data.description }</p>
-                            <a className="continue-learning" href="/">Continue Learning</a>
+                            <Link className="continue-learning" to={ data.subject.replace(" ", "") }>Continue Learning</Link>
                         </div>
                     )
                 })}

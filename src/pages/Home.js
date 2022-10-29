@@ -6,7 +6,7 @@ function Home() {
     return (
         <>
             <div className="banner">
-            <h1 className="bannerh1">Welcome to EdMobile</h1>
+            <h1 className="bannerh1">Welcome to StudiRepo</h1>
             </div>
             
             <AvailableSubjects/>

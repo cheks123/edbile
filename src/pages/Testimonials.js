@@ -4,13 +4,13 @@ function Testimonials() {
                 
                 <h2>Testimonials</h2>
                         <div className="col3 exam">
-                            <p>EdMobile is the best online platform for preparing for examinations</p>
+                            <p>StudiRepo is the best online platform for preparing for examinations</p>
                         </div>
                         <div className="col3 exam">
-                            <p>EdMobile is the best online platform for preparing for examinations</p>
+                            <p>StudiRepo is the best online platform for preparing for examinations</p>
                         </div>
                         <div className="col3 exam">
-                            <p>EdMobile is the best online platform for preparing for examinations</p>
+                            <p>StudiRepo is the best online platform for preparing for examinations</p>
                         </div> 
                    
             </div>

@@ -1,0 +1,11 @@
+.subject-content{
+    display: flex;
+}
+
+.col25{
+    flex-basis: 25%;
+}
+
+.col75{
+    flex-basis: 75%;
+}
