@@ -22,7 +22,7 @@ export default function Physics() {
                 <h2>Topics</h2>
                 <ul>
                   <li><Link to="/chemistry/">Introduction</Link></li>
-                  <li><Link to="/chemistry/elements">Elemants</Link></li>
+                  <li><Link to="/chemistry/elements">Elements</Link></li>
                   <li><Link to="/chemistry/compounds">Compounds</Link></li>
                   <li><Link to="/chemstry/mixtures">Mixtures</Link></li>
                   <li><Link to="/chemistry/changes">Changes</Link></li>
