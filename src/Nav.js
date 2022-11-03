@@ -23,9 +23,9 @@ function Nav() {
       </nav>
       <nav className="mobile-navbar">
         <ul className="mobile-nav-list" style={{maxHeight:showNav?"100%":"0%"}}>
-          <CustomLink to="/">Home</CustomLink>
-          <CustomLink to="/about">About</CustomLink>
-          <CustomLink to="/contact">Contact</CustomLink>
+          <CustomLink to="/" onClick={menuToggle}>Home</CustomLink>
+          <CustomLink to="/about" onClick={menuToggle}>About</CustomLink>
+          <CustomLink to="/contact" onClick={menuToggle}>Contact</CustomLink>
           <CustomLink to="">Subjects</CustomLink>
         </ul>
     </nav>

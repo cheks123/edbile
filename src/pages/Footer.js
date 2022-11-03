@@ -32,7 +32,7 @@ function Footer() {
                         </div>
                 </div>
                 <div className="row copyright">
-                    <p>(c) Copyright 2022; All right reserved.</p>
+                    <p>(c) Copyright {new Date().getFullYear()}; All right reserved.</p>
                 </div>
 
 
