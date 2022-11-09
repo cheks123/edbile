@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
   
 export default function TrigonometricRatios() {
+  window.scrollTo(0,0)
     return (
       <>             
-                <h1>Trigonometric Ratios</h1>
+                <h1 className="subject-heading">Trigonometric Ratios</h1>
                 <div className="subject-navigation">
                   <Link to="/Mathematics/" className="previous">&lt;&lt;</Link>
                   <Link to="/Mathematics/Indices" className="next">&gt;&gt;</Link>
@@ -15,7 +16,7 @@ export default function TrigonometricRatios() {
                   of the subject in other to be able to make progress in their academics.
                 </p>
                 <p>On this platform, let us work on the following topics with you:</p>
-                <ul>
+                <ul className="subject-ul">
                   <li>Indices</li>
                   <li>Logarithms</li>
                   <li>Surds</li>

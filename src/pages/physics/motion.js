@@ -1,9 +1,10 @@
 import TopicNav from "../topic-nav";
 
 export default function Motion() {
+  
     return (
         <>             
-                  <h1>Motion</h1>
+                  <h1 className="subject-heading">Motion</h1>
                   <div className="subject-navigation">
                     <TopicNav previous="/physics/" next="/physics/expansion" />
                   </div>

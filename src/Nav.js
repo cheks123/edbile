@@ -13,7 +13,7 @@ function Nav() {
             <CustomLink to="/">Home</CustomLink>
             <CustomLink to="/about">About</CustomLink>
             <CustomLink to="/contact">Contact</CustomLink>
-            <CustomLink to="">Subjects</CustomLink>
+            <li>Subjects</li>
           </ul>
           <div className="menu-icon2" onClick={menuToggle}>
             <div className="hamburger"></div>
@@ -26,7 +26,7 @@ function Nav() {
           <CustomLink to="/" onClick={menuToggle}>Home</CustomLink>
           <CustomLink to="/about" onClick={menuToggle}>About</CustomLink>
           <CustomLink to="/contact" onClick={menuToggle}>Contact</CustomLink>
-          <CustomLink to="">Subjects</CustomLink>
+          <li>Subjects</li>
         </ul>
     </nav>
     </>

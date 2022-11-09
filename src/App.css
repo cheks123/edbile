@@ -12,10 +12,6 @@
     justify-content: space-between;
 }
 
-.container{
-    margin: 1rem;
-}
-
 a.logo{
     color: white;
     font-size: 2.5rem;
@@ -246,6 +242,16 @@ footer .col3{
 
     ul.mobile-nav-list li a{
         color:white;
+    }
+
+    .row{
+        padding: 0 0.5rem;
+        margin: 1rem 0rem;
+    }
+    
+    .col75{
+        min-width: 100%;
+        padding-left:0.5rem;
     }
 }
 

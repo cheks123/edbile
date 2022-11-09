@@ -1,9 +1,10 @@
 import TopicNav from "../topic-nav";
 
 export default function HeatTransfer() {
+  window.scrollTo(0,0)
     return (
         <>             
-                  <h1>Heat Transfer</h1>
+                  <h1 className="subject-heading">Heat Transfer</h1>
                   <div className="subject-navigation">
                     <TopicNav previous="/physics/vectors-scalars" next="/physics/heat-transfer" />
                   </div>
@@ -14,7 +15,7 @@ export default function HeatTransfer() {
                     of the subject in other to be able to make progress in their academics.
                   </p>
                   <p>On this platform, let us work on the following topics with you:</p>
-                  <ul>
+                  <ul className="subject-ul">
                     <li>Indices</li>
                     <li>Logarithms</li>
                     <li>Surds</li>

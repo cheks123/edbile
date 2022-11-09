@@ -1,9 +1,10 @@
 import TopicNav from "../topic-nav";
 
 export default function Logarithms() {
+  window.scrollTo(0,0)
     return (
       <>             
-                <h1>Logarithms</h1>
+                <h1 className="subject-heading">Logarithms</h1>
                 <div className="subject-navigation">
                   <TopicNav previous="/Mathematics/Indices" next="/mathematics/surds" />
                 </div>
@@ -14,7 +15,7 @@ export default function Logarithms() {
                   of the subject in other to be able to make progress in their academics.
                 </p>
                 <p>On this platform, let us work on the following topics with you:</p>
-                <ul>
+                <ul className="subject-ul">
                   <li>Indices</li>
                   <li>Logarithms</li>
                   <li>Surds</li>

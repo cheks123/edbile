@@ -2,9 +2,10 @@ import React from 'react'
 import TopicNav from "../topic-nav";
 
 export default function Expansion() {
+  window.scrollTo(0,0)
     return (
         <>             
-                  <h1>Expansion</h1>
+                  <h1 className="subject-heading">Expansion</h1>
                   <div className="subject-navigation">
                     <TopicNav precious="/physics/motion" next="/physics/vectors-scalars" />
                   </div>
@@ -15,7 +16,7 @@ export default function Expansion() {
                     of the subject in other to be able to make progress in their academics.
                   </p>
                   <p>On this platform, let us work on the following topics with you:</p>
-                  <ul>
+                  <ul className="subject-ul">
                     <li>Indices</li>
                     <li>Logarithms</li>
                     <li>Surds</li>

@@ -3,7 +3,7 @@ import TopicNav from "../topic-nav";
 export default function ChemistryIntro() {
     return (
       <>             
-                <h1>Chemistry</h1>
+                <h1 className="subject-heading">Chemistry</h1>
                 <div className="subject-navigation">
                   <TopicNav previous="/chemistry/" next="/chemistry/elements" />
                 </div>
@@ -15,7 +15,7 @@ export default function ChemistryIntro() {
                   of the subject in other to be able to make progress in their academics.
                 </p>
                 <p>On this platform, let us work on the following topics with you:</p>
-                <ul>
+                <ul className="subject-ul">
                   <li>Indices</li>
                   <li>Logarithms</li>
                   <li>Surds</li>
