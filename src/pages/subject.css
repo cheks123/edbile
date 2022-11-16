@@ -36,6 +36,8 @@
         display: none;
     }
 
+    
+
     .mobile-side-bar{
         position:fixed;
         display: block;
@@ -43,8 +45,8 @@
         background-color: #333;
         height:100vh;
         width:75%;
-        z-index:15;
-        top:3.4rem;
+        z-index:12;
+        top:3.6rem;
         left:0;
         transition: max-width 0.5s;
     }

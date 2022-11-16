@@ -37,6 +37,7 @@ import Commerce from "./pages/commerce/Commerce";
 import Economics from "./pages/economics/Economics";
 import EnglishLanguage from "./pages/englishLanguage/EnglishLanguage";
 import CivicEducation from "./pages/civicEducation/CivicEducation";
+import CivicEducationIntro from "./pages/civicEducation/civic-education-intro";
 
 
 
@@ -87,7 +88,10 @@ function App() {
         <Route path="/commerce" element={<Commerce/>} />
         <Route path="/economics" element={<Economics/>} />
         <Route path="/englishlanguage" element={<EnglishLanguage/>} />
-        <Route path="/civicEducation" element={<CivicEducation/>} />
+        <Route path="/civiceducation" element={<CivicEducation/>} >
+          <Route path="/civiceducation/" element={<CivicEducationIntro />} />
+
+        </Route>
       </Routes>
       <Footer/>
   

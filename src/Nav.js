@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 function Nav() {
 
   const [showNav, setShowNav] = useState(false);
+  const [showSubjectList, setShowSubjectList] = useState(false)
   
   const menuToggle = () => setShowNav(prev => !showNav);
+
+  const toggleSubjectDropDown = () => {setShowSubjectList(prev => !showSubjectList);
+  console.log(showSubjectList)}
     return (
       <>
       <nav className="navbar">
@@ -13,7 +17,7 @@ function Nav() {
             <CustomLink to="/">Home</CustomLink>
             <CustomLink to="/about">About</CustomLink>
             <CustomLink to="/contact">Contact</CustomLink>
-            <li>Subjects</li>
+            <li><span className="subject-drop-down" onClick={toggleSubjectDropDown}>Subjects</span></li>
           </ul>
           <div className="menu-icon2" onClick={menuToggle}>
             <div className="hamburger"></div>
@@ -26,9 +30,21 @@ function Nav() {
           <CustomLink to="/" onClick={menuToggle}>Home</CustomLink>
           <CustomLink to="/about" onClick={menuToggle}>About</CustomLink>
           <CustomLink to="/contact" onClick={menuToggle}>Contact</CustomLink>
-          <li>Subjects</li>
+          <li><span className="subject-drop-down" onClick={toggleSubjectDropDown}>Subjects</span></li>
         </ul>
     </nav>
+    <div className="subject-list-drop-down" style={{maxHeight:showSubjectList?"auto":"0%"}}>
+      <ul>
+        <li>Mathematics</li>
+        <li>English Language</li>
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Biology</li>
+        <li>Government</li>
+        <li>Economics</li>
+        <li>Commerce</li>
+      </ul>
+    </div>
     </>
     );
   }

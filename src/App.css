@@ -6,7 +6,7 @@
 }
 
 .navbar{
-    background: #000;
+    background: blue;
     color: white;
     margin: 0;
     justify-content: space-between;
@@ -30,18 +30,23 @@ a.logo{
     
 }
 
-.navbar a{
+.navbar a, .subject-drop-down{
     color: white;
+    font-weight:500;
     text-decoration: none;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
-    padding: .25rem;
+    padding: .25rem 0.5rem;
+}
+
+.subject-drop-down{
+    cursor:pointer;
 }
 
 
 
-.navbar li.active, nav li:hover{
-    background-color: #333;
+.navbar li.active a, nav li a:hover, .subject-drop-down:hover{
+    background-color: rgb(11, 11, 247);
 }
 
 
@@ -63,6 +68,13 @@ ul.mobile-nav-list{
 
 .menu-icon2{
     display:none;
+}
+
+.subject-list-drop-down{
+    display:none;
+    background-color: gray;
+    width:auto;
+    height:auto;
 }
 
 .banner{
@@ -122,6 +134,8 @@ ul.mobile-nav-list{
     
 }
 
+
+
 h2{
     padding:2rem;
 }
@@ -130,14 +144,12 @@ p{
     padding: 1rem;
 }
 
+
 .subject{
     margin: 1rem 0rem;
     padding: 3rem;
-    height: 240px;
+    /*height: 240px;*/
     text-align: center;
-}
-
-.subject:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
@@ -147,13 +159,13 @@ p{
     width: 70%;
     padding: .5rem;
     margin:0 auto;
-    background-color:#000;
+    background-color:blue;
     border-radius: 2rem;
     color:white;
 }
 
 .continue-learning:hover{
-    background-color: #333;
+    background-color: rgb(102, 102, 241);
 }
 
 .exam h3{
@@ -238,21 +250,41 @@ footer .col3{
         color:#fff;
         margin: 0.2rem 0.1rem;
         padding-left: 0.3rem;
+        
     }
 
     ul.mobile-nav-list li a{
         color:white;
+
     }
 
     .row{
         padding: 0 0.5rem;
         margin: 1rem 0rem;
     }
+
+    .available-subjects{
+        margin:0;
+        padding:0;
+        min-width: 100%;
+    }
+
+    .subject{
+        min-width: 100%;
+        padding:3rem 0;
+        margin: 1rem 0;
+        height: auto;        
+    }
+
+    .subject h3{
+        padding-top: 0rem;
+    }
     
     .col75{
         min-width: 100%;
         padding-left:0.5rem;
     }
+    
 }
 
 /* media query for less than 600 screen size */
