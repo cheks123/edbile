@@ -16,8 +16,8 @@
     margin: 2rem 1rem;
 }
 
-.subject-navigation .previous, .next{
-    background-color: #000;
+.previous, .next{
+    background-color: #00f;
     color:#fff;
     padding: 0.5rem 1.5rem;
     border-radius: 20%;
@@ -28,6 +28,21 @@
 }
 .fab-icon{
     display:none;
+}
+
+ol li{
+    padding-top: 1px;
+    padding-bottom: 1px;   
+}
+
+.content-para, .content-h2, .content-ol{
+    padding-left:1rem;
+    padding-right:1rem;
+    text-align: justify;
+   
+}
+.content-h2{
+    padding-bottom:0.5rem;
 }
 
 @media only screen and (max-width:800px){

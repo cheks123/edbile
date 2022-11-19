@@ -5,9 +5,9 @@ export default function Logarithms() {
     return (
       <>             
                 <h1 className="subject-heading">Logarithms</h1>
-                <div className="subject-navigation">
-                  <TopicNav previous="/Mathematics/Indices" next="/mathematics/surds" />
-                </div>
+               
+                  <TopicNav previous="/mathematics/indices" next="/mathematics/surds" />
+              
                 <p>Mathematics is an essential subject that has application in all fields of life.
                   It is one of the compulsory subjects in the Nigerian curriculum. Without passing 
                   mathematics, it is impossible for a student to gain admission into the university. 
@@ -25,9 +25,9 @@ export default function Logarithms() {
                   <li>Trigonometric Ratios</li>
                   <li>Longitude and Latitude</li>
                 </ul>
-                <div className="subject-navigation">
-                  <TopicNav previous="/Mathematics/Indices" next="/mathematics/surds" />
-                </div>
+                
+                  <TopicNav previous="/mathematics/indices" next="/mathematics/surds" />
+              
 
       </>
     );

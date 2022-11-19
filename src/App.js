@@ -38,6 +38,7 @@ import Economics from "./pages/economics/Economics";
 import EnglishLanguage from "./pages/englishLanguage/EnglishLanguage";
 import CivicEducation from "./pages/civicEducation/CivicEducation";
 import CivicEducationIntro from "./pages/civicEducation/civic-education-intro";
+import GovernmentIntro from "./pages/government/government-intro";
 
 
 
@@ -84,7 +85,9 @@ function App() {
           <Route path="/chemistry/changes" element={<Changes />} />
         </Route>
         <Route path="/biology" element={<Biology/>} />
-        <Route path="/government" element={<Government/>} />
+        <Route path="/government" element={<Government/>}>
+          <Route path="/government/" element={<GovernmentIntro />} />
+        </Route>
         <Route path="/commerce" element={<Commerce/>} />
         <Route path="/economics" element={<Economics/>} />
         <Route path="/englishlanguage" element={<EnglishLanguage/>} />

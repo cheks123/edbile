@@ -3,11 +3,10 @@ export default function CivicEducationIntro() {
     return (
       <>             
                 <h1 className="subject-heading">Civic Education</h1>
-                <div className="subject-navigation">
-                  <TopicNav previous="/civiceducation/" next="/civiceducation/indices" />
-                </div>
+                <TopicNav previous="/civiceducation/" next="/civiceducation/" />
+               
 
-                <p>
+                <p className="content-para">
                     The word ‘Civic ‘is a Greek word which simply means,’ citizen of a city or an 
                     area’. Civics refers to educating the citizens. Civic Education simply means 
                     educational and learning activities specifically meant to create awareness, 
@@ -20,27 +19,74 @@ export default function CivicEducationIntro() {
                     political body and to the government.
 
                 </p>
-                <h2>The need for Civic Education</h2>
-                <ul>
+                <h2 className="content-h2">The Need for Civic Education</h2>
+                <ol className="content-ol">
                   <li>
-                    1.	It enhances people capacity to understand their roles, obligations and 
+                    1. It enhances people capacity to understand their roles, obligations and 
                     duties to their fellow citizens and government
                   </li>
                   <li>
-                    2.	It creates awareness among citizens on the duties of  the government 
+                    2. It creates awareness among citizens on the duties of  the government 
                     to the citizens
                   </li>
                   <li>
-                    3.	Civic Education also generates concern for the values by which a 
+                    3. Civic Education also generates concern for the values by which a 
                     civilized society is identified.
-                    </li>
-                    <li>
-                      4.	.It is for public education and awareness.
-                    </li>
-                </ul>
-                <div className="subject-navigation">
-                 <TopicNav previous="/Mathematics/" next="/Mathematics/Indices" />
-                </div>
+                  </li>
+                  <li>
+                    4. It is for public education and awareness.
+                  </li>
+                </ol>
+                <h2 className="content-h2">Objectives of Civic Education</h2>
+                <p>The objectives of civic education are:</p>
+              <ol className="content-ol">
+                <li>
+                  1. To teach the right attitudes that is acceptable in the society.
+                </li>
+                <li>
+                  2. To encourage good citizenship.
+                </li>
+                <li>
+                  3. To develop the spirit of cooperation and friendship
+                </li>
+                <li>
+                  5. To teach good leadership and followership.
+                </li>
+                <li>
+                  6. To dissuade citizens from bad and unholy behaviours like indecent dressing, 
+                  examination malpractices, prostitution, cultism, etc.
+                </li>
+                <li>
+                  7. To encourage religious tolerance.
+                </li>
+                <li>
+                  8. To expose students to the various ways of achieving community and 
+                  national development.
+                </li>
+              </ol>
+              <h2 className="content-h2">Importance of Civic Education</h2>
+              <ol className="content-ol">
+                <li>
+                  1. Civic education is important for developing good citizens of a country.
+                </li>
+                <li>
+                  2. It teaches peaceful co-existence of citizens most especially 
+                  in a multi-ethnic country like Nigeria.
+                </li>
+                <li>
+                  3. It enhances individual growth for self-reliant.
+                </li>
+                <li>
+                  4. Civic education makes citizens to be aware of their rights and obligations.
+                </li>
+                <li>
+                  5. It helps to create a better society.
+                </li>
+                <li>
+                  6. It encourages national development and rapid growth.
+                </li>
+              </ol>  
+              <TopicNav previous="/civiceducation/" next="/civiceducaton/" />
 
       </>
     );

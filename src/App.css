@@ -69,12 +69,10 @@ ul.mobile-nav-list{
 .menu-icon2{
     display:none;
 }
-
 .subject-list-drop-down{
-    display:none;
-    background-color: gray;
-    width:auto;
-    height:auto;
+    position:absolute;
+    z-index: 20;
+    
 }
 
 .banner{

@@ -5,9 +5,9 @@ export default function LinearEquations() {
     return (
       <>             
                 <h1 className="subject-heading">Linear Equations</h1>
-                <div className="subject-navigation">
+                
                   <TopicNav previous="/mathematics/surds" next="/mathematics/linear-equations" />
-                </div>
+                
                 <p>Mathematics is an essential subject that has application in all fields of life.
                   It is one of the compulsory subjects in the Nigerian curriculum. Without passing 
                   mathematics, it is impossible for a student to gain admission into the university. 
@@ -25,9 +25,9 @@ export default function LinearEquations() {
                   <li>Trigonometric Ratios</li>
                   <li>Longitude and Latitude</li>
                 </ul>
-                <div className="subject-navigation">
+                
                   <TopicNav previous="/mathematics/surds" next="/mathematics/linear-equations" />
-                </div>
+              
 
       </>
     );

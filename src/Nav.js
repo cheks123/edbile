@@ -8,7 +8,7 @@ function Nav() {
   const menuToggle = () => setShowNav(prev => !showNav);
 
   const toggleSubjectDropDown = () => {setShowSubjectList(prev => !showSubjectList);
-  console.log(showSubjectList)}
+  console.log("showSubjectList: ", showSubjectList)}
     return (
       <>
       <nav className="navbar">
@@ -17,7 +17,9 @@ function Nav() {
             <CustomLink to="/">Home</CustomLink>
             <CustomLink to="/about">About</CustomLink>
             <CustomLink to="/contact">Contact</CustomLink>
-            <li><span className="subject-drop-down" onClick={toggleSubjectDropDown}>Subjects</span></li>
+            <li>
+              <span className="subject-drop-down" onClick={toggleSubjectDropDown}>Subjects</span>
+            </li>
           </ul>
           <div className="menu-icon2" onClick={menuToggle}>
             <div className="hamburger"></div>
