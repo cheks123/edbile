@@ -34,11 +34,13 @@ import Compounds from "./pages/chemistry/compounds";
 import Biology from "./pages/biology/Biology";
 import Government from "./pages/government/Government";
 import Commerce from "./pages/commerce/Commerce";
+import CommerceIntro from "./pages/commerce/commerce-intro";
 import Economics from "./pages/economics/Economics";
 import EnglishLanguage from "./pages/englishLanguage/EnglishLanguage";
 import CivicEducation from "./pages/civicEducation/CivicEducation";
 import CivicEducationIntro from "./pages/civicEducation/civic-education-intro";
 import GovernmentIntro from "./pages/government/government-intro";
+import EconomicsIntro from "./pages/economics/economics-intro";
 
 
 
@@ -88,8 +90,12 @@ function App() {
         <Route path="/government" element={<Government/>}>
           <Route path="/government/" element={<GovernmentIntro />} />
         </Route>
-        <Route path="/commerce" element={<Commerce/>} />
-        <Route path="/economics" element={<Economics/>} />
+        <Route path="/commerce" element={<Commerce/>} >
+          <Route path="/commerce/" element={<CommerceIntro/>} />
+        </Route>
+        <Route path="/economics" element={<Economics/>} >
+        <Route path="/economics/" element={<EconomicsIntro/>} />
+        </Route>
         <Route path="/englishlanguage" element={<EnglishLanguage/>} />
         <Route path="/civiceducation" element={<CivicEducation/>} >
           <Route path="/civiceducation/" element={<CivicEducationIntro />} />

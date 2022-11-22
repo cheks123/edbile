@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 
-export default function CivicEducation() {
+export default function Government() {
   const [showSideBar, setShowSideBar] = useState(false)
 
   const toggleSideNav = () =>{
