@@ -12,7 +12,7 @@ function AvailableSubjects() {
                         <div key = {key} className="col3 subject">
                             <h3>{ data.subject }</h3>
                             <p>{ data.description }</p>
-                            <Link className="continue-learning" to={ data.subject.replace(" ", "") }>Continue Learning</Link>
+                            <Link className="continue-learning" to={ data.subject.replace(" ", "").toLowerCase() }>Continue Learning</Link>
                         </div>
                     )
                 })}

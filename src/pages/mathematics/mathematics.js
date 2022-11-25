@@ -24,22 +24,12 @@ export default function Mathematics() {
                 <h2>Topics</h2>
                 <ul>
                   <li><Link to="/mathematics/">Introduction</Link></li>
-                  <li><Link to="/mathematics/indices">Indices</Link></li>
-                  <li><Link to="/mathematics/logarithms">Logarithms</Link></li>
-                  <li><Link to="/mathematics/surds">Surds</Link></li>
-                  <li><Link to="/mathematics/linear-equations">Linear Equations</Link></li>
-                  
                 </ul>
               </div>
               <div className="col25 mobile-side-bar" style={{maxWidth:showSideBar?"100%":"0%"}}>
                 <h2>Topics</h2>
                 <ul>
-                  <li><Link to="/mathematics/" onClick={toTop}>Introduction</Link></li>
-                  <li><Link to="/mathematics/indices" onClick={toTop}>Indices</Link></li>
-                  <li><Link to="/mathematics/logarithms" onClick={toTop}>Logarithms</Link></li>
-                  <li><Link to="/mathematics/surds" onClick={toTop}>Surds</Link></li>
-                  <li><Link to="/mathematics/linear-equations" onClick={toTop}>Linear Equations</Link></li>
-                  
+                  <li><Link to="/mathematics/" onClick={toTop}>Introduction</Link></li>                  
                 </ul>
               </div>
               

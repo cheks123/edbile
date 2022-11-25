@@ -5,30 +5,44 @@ export default function PhysicsIntro() {
     return (
       <>             
                 <h1 className="subject-heading">Physics</h1>
-                <div className="subject-navigation">
                   <TopicNav previous="/physics/" next="/physics/motion" />
-                </div>
-
-                <p>Mathematics is an essential subject that has application in all fields of life.
-                  It is one of the compulsory subjects in the Nigerian curriculum. Without passing 
-                  mathematics, it is impossible for a student to gain admission into the university. 
-                  Students should therefore put in there best in ensuring that they have a good grasp 
-                  of the subject in other to be able to make progress in their academics.
-                </p>
-                <p>On this platform, let us work on the following topics with you:</p>
-                <ul className="subject-ul">
-                  <li>Indices</li>
-                  <li>Logarithms</li>
-                  <li>Surds</li>
-                  <li>Linear Equations</li>
-                  <li>Quadratic Equations</li>
-                  <li>Circle Theory</li>
-                  <li>Trigonometric Ratios</li>
-                  <li>Longitude and Latitude</li>
-                </ul>
-                <div className="subject-navigation">
+                  <p className="content-para">
+                    The word ‘’PHYSICS’’ originates from the Greek word, ‘’PHYSIS’’, which means 
+                    nature and natural characteristics. Physics as a body of scientific knowledge, 
+                    deals with the study of events in the universe, both remote and immediate 
+                    universe. In actual sense, physics deals with the behaviour of matter as 
+                    well as the interaction of matter and natural forces. Physics is the study 
+                    of matter in relation to energy.
+                  </p>
+                  <h2 className="content-h2">Importance of Physics</h2>
+                  <ol className="content-ol">
+                    <li>
+                      1.	Physics is constantly striving to make sense of the universe. 
+                      This is seen in the development of theories and new theories used for 
+                      better understanding of the universe.
+                    </li>
+                    <li>
+                      2.	When we study physics, we acquire the knowledge and skills to 
+                      understand how and why natural things happen the way they do, and 
+                      to make reliable predictions about their future occurrences. 
+                      (e.g mirage, eclipse, earthquake, thunder,…)
+                    </li>
+                    <li>
+                      3.	The knowledge of physics gives us a better understanding of our 
+                      immediate and natural environment.
+                    </li>
+                    <li>
+                      4.	The study of physics has enhanced the communication and the 
+                      transportation world, thus, making the world a ‘’global village’’.
+                    </li>
+                    <li>
+                      5.	Human health has been improved from the study of physics through 
+                      the invention of modern medical equipment.
+                    </li>
+                  </ol>
+                
                   <TopicNav previous="/physics/" next="/physics/motion" />
-                </div>
+               
 
       </>
     );
