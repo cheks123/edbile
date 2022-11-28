@@ -36,7 +36,7 @@ function Nav() {
           <li><span className="subject-drop-down" onClick={toggleSubjectDropDown}>Subjects</span></li>
         </ul>
     </nav>
-    <div className="subject-list-drop-down" style={{ display:showSubjectList?"none":"block" }}>
+    <div className="subject-list-drop-down" style={{ display:showSubjectList?"block":"none" }}>
       <button onClick={toggleSubjectDropDown}>X</button>
       <ul>
         <li><Link to="/mathematics/" onClick={toggleSubjectDropDown}>Mathematics</Link></li>
