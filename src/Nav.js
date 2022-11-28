@@ -7,8 +7,9 @@ function Nav() {
   
   const menuToggle = () => setShowNav(prev => !showNav);
 
-  const toggleSubjectDropDown = () => {setShowSubjectList(prev => !showSubjectList);
-  console.log("showSubjectList: ", showSubjectList)}
+  const toggleSubjectDropDown = () => {
+    setShowSubjectList(prev => !showSubjectList);
+    console.log("showSubjectList: ", showSubjectList)}
     return (
       <>
       <nav className="navbar">
@@ -35,16 +36,18 @@ function Nav() {
           <li><span className="subject-drop-down" onClick={toggleSubjectDropDown}>Subjects</span></li>
         </ul>
     </nav>
-    <div className="subject-list-drop-down" style={{maxHeight:showSubjectList?"auto":"0%"}}>
+    <div className="subject-list-drop-down" style={{ display:showSubjectList?"none":"block" }}>
+      <button onClick={toggleSubjectDropDown}>X</button>
       <ul>
-        <li>Mathematics</li>
-        <li>English Language</li>
-        <li>Physics</li>
-        <li>Chemistry</li>
-        <li>Biology</li>
-        <li>Government</li>
-        <li>Economics</li>
-        <li>Commerce</li>
+        <li><Link to="/mathematics/" onClick={toggleSubjectDropDown}>Mathematics</Link></li>
+        <li><Link to="/physics/" onClick={toggleSubjectDropDown}>Physics</Link></li>
+        <li><Link to="/chemistry/" onClick={toggleSubjectDropDown}>Chemistry</Link></li>
+        <li><Link to="/biology/" onClick={toggleSubjectDropDown}>Biology</Link></li>
+        <li><Link to="/economics/" onClick={toggleSubjectDropDown}>Economics</Link></li>
+        <li><Link to="/commerce/" onClick={toggleSubjectDropDown}>Commerce</Link></li>
+        <li><Link to="/government/" onClick={toggleSubjectDropDown}>Government</Link></li>
+        <li><Link to="/civiceducation/" onClick={toggleSubjectDropDown}>Civic Education</Link></li>
+        <li><Link to="/generalknowledge/" onClick={toggleSubjectDropDown}>General Knowledge</Link></li>
       </ul>
     </div>
     </>

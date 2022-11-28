@@ -23,12 +23,12 @@ import Government from "./pages/government/Government";
 import Commerce from "./pages/commerce/Commerce";
 import CommerceIntro from "./pages/commerce/commerce-intro";
 import Economics from "./pages/economics/Economics";
-import EnglishLanguage from "./pages/englishLanguage/EnglishLanguage";
 import CivicEducation from "./pages/civicEducation/CivicEducation";
 import CivicEducationIntro from "./pages/civicEducation/civic-education-intro";
 import GovernmentIntro from "./pages/government/government-intro";
 import EconomicsIntro from "./pages/economics/economics-intro";
 import BiologyIntro from "./pages/biology/biology-intro";
+import GeneralKnowledge from "./pages/general-knowledge/general-knowledge";
 
 
 
@@ -38,7 +38,7 @@ import BiologyIntro from "./pages/biology/biology-intro";
 
 
 
-function App() {
+export default function App() {
   
   return (
     <>
@@ -73,7 +73,7 @@ function App() {
         <Route path="/economics" element={<Economics/>} >
         <Route path="/economics/" element={<EconomicsIntro/>} />
         </Route>
-        <Route path="/englishlanguage" element={<EnglishLanguage/>} />
+        <Route path="/generalknowledge" element={<GeneralKnowledge/>} />
         <Route path="/civiceducation" element={<CivicEducation/>} >
           <Route path="/civiceducation/" element={<CivicEducationIntro />} />
 
@@ -85,5 +85,3 @@ function App() {
     </>
   );
 }
-
-export default App;

@@ -4,10 +4,6 @@ export const subjectData = [
         "description": "The queen of science."
     },
     {
-        "subject": "English Language",
-        "description": "The language spoken by around 1.5 billion people."
-    },
-    {
         "subject": "Physics",
         "description": "The science of matter with respect to energy."
     },
@@ -34,5 +30,9 @@ export const subjectData = [
     {
         "subject": "Civic Education",
         "description": "The subject that teaches us to behave well in the society."
+    },
+    {
+        "subject": "General Knowledge",
+        "description": "Know something about everything."
     }
 ]
